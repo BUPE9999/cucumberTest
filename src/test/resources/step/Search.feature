@@ -8,4 +8,3 @@ Feature: Search
       | title |
       | java  |
       | 123   |
-      |       |
