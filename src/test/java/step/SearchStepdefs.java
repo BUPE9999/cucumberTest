@@ -24,7 +24,6 @@ public class SearchStepdefs extends AbstractStepDefs{
         //通过搜索的id定位点击
         driver.findElement(By.xpath("//*[@id=\"post-217173\"]" +
                 "/div/div[1]/div/div[1]/div/div/div[2]/form/div/input[5]")).click();
-        //强制暂停，一个场景结束调用一次，便于观察
         Thread.sleep(2000);
     }
 }

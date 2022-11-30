@@ -5,6 +5,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 
 import java.util.concurrent.TimeUnit;
 
@@ -28,15 +30,25 @@ public abstract class AbstractStepDefs {
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(WAIT_TIME, TimeUnit.SECONDS);
          */
+
+        /*
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-
         driver = new ChromeDriver(options);
-        //设置Selenium隐式等待
+        //set Selenium implicit wait
         driver.manage().timeouts().implicitlyWait(WAIT_TIME, TimeUnit.SECONDS);
-        //设置浏览器页面为全屏
+        //set full screen
         driver.manage().window().maximize();
         homePage = new HomePage(driver);
+         */
+
+        WebDriverManager.edgedriver().setup();
+        EdgeOptions options = new EdgeOptions();
+        driver = new EdgeDriver(options);
+        driver.manage().timeouts().implicitlyWait(WAIT_TIME, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
+        homePage = new HomePage(driver);
+
     }
 
 }

@@ -16,7 +16,7 @@ public class MessageStepdefs extends  AbstractStepDefs{
         driver.findElement(By.id("et_pb_contact_name_0")).sendKeys(arg0);
         driver.findElement(By.id("et_pb_contact_email_0")).sendKeys(arg1);
         driver.findElement(By.id("et_pb_contact_message_0")).sendKeys(arg2);
-        //接收页面的数字，进行加法运算
+        //do calculation
         String arg = driver.findElement(By.xpath("//*[@id=\"et_pb_contact_form_0\"]/div[2]/form/div/div/p/span")).getText();
         System.out.println(arg);
         char[] argstr = arg.toCharArray();

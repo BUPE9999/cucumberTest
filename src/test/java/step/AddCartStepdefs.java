@@ -8,14 +8,12 @@ import org.openqa.selenium.By;
 public class AddCartStepdefs extends AbstractStepDefs{
     @Given("user starts shopping for the product")
     public void goToShopping() throws InterruptedException {
-        //打开商品页面
         driver.navigate().to("https://www.saucedemo.com/inventory.html");
         Thread.sleep(1000);
     }
 
     @When("user click ADD TO CARD")
     public void userClickADD() {
-        //点击第一件商品
         driver.findElement(By.id("add-to-cart-sauce-labs-backpack")).click();
     }
 
@@ -27,7 +25,6 @@ public class AddCartStepdefs extends AbstractStepDefs{
         }else {
             System.out.println("Test Failed");
         }
-        //打开购物车页面
         driver.findElement(By.xpath("//*[@id=\"shopping_cart_container\"]/a")).click();
         //强制暂停，一个场景结束调用一次，便于观察
         Thread.sleep(2000);

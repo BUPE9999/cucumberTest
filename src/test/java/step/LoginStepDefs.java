@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 public class LoginStepDefs extends AbstractStepDefs {
     @Given("user login to saucedemo")
     public void goToPage() {
-        //跳转浏览器到登录页面
         driver.get("https://www.saucedemo.com/");
 
     }
@@ -30,7 +29,6 @@ public class LoginStepDefs extends AbstractStepDefs {
         else {
             System.out.println("Test Failed");
         }
-        //强制暂停，一个场景结束调用一次，便于观察
         Thread.sleep(2000);
     }
 }

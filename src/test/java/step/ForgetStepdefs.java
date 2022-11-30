@@ -10,7 +10,6 @@ import org.openqa.selenium.By;
 public class ForgetStepdefs extends AbstractStepDefs{
     @Given("users login to saucedemo")
     public void usersLoginToSaucedemo() {
-        //跳转浏览器到登录页面
         driver.get("https://phptravels.net/api/admin");
     }
 
