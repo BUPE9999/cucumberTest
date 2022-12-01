@@ -6,7 +6,7 @@ Feature: Scenario Outline
     When I enter Username as "<username>" and Password as "<password>"
     Then login should be unsuccessful
     Examples:
-      | username      | password     |
-      | username1     | password1    |
-      | username2     | password2    |
-      | standard_user | secret_sauce |
+      | username            | password     |
+      | username1           | password1    |
+      | locked_out_user     | secret_sauce |
+      | standard_user       | secret_sauce |

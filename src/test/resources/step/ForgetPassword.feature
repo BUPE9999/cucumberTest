@@ -18,6 +18,4 @@ Feature: user Forget Password
     Then Recover the password should be unsuccessful
     Examples:
       | email                   |
-      | 123                     |
-      | 111111                  |
-      | admin@phptravels.com     |
+      | admin@phptravels.com    |

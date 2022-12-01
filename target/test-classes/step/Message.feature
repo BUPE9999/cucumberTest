@@ -7,4 +7,6 @@ Feature: Message subscribed
     Examples:
       | name             | email            | message                                                |
       | newsletter-input | abcd.com         | Newsletter : Invalid email address.                    |
+      | newsletter-input | abcssd.com         | Newsletter : Invalisssd email address.                    |
+
       | newsletter-input | abcdef@email.com | Newsletter : This email address is already registered. |
