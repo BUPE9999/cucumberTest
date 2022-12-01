@@ -19,5 +19,5 @@ Feature: AddCart test
     Then Whether the payment was successful
     Examples:
       | FirstName | LastName | Zip/PostalCode |
-      | liu       | bei      | 350000         |
-      | li        | bai      | 360000         |
+      | Sen       | Kou      | 100         |
+      | Wen        | Ying      | 200         |
