@@ -18,7 +18,7 @@ public class MessageStepdefs extends  AbstractStepDefs{
         driver.findElement(By.id("et_pb_contact_name_0")).sendKeys(arg0);
         driver.findElement(By.id("et_pb_contact_email_0")).sendKeys(arg1);
         driver.findElement(By.id("et_pb_contact_message_0")).sendKeys(arg2);
-        //do calculation
+
         String arg = driver.findElement
                 (By.xpath("//*[@id=\"et_pb_contact_form_0\"]/div[2]/form/div/div/p/span"))
                 .getText();
@@ -32,11 +32,6 @@ public class MessageStepdefs extends  AbstractStepDefs{
         int a = values[1];
         int b = values[0];
 
-        //char[] argstr = arg.toCharArray();
-        //char bs = arg.charAt(4);
-
-        //int a = Integer.parseInt(argstr[0]+"");
-        //int b = Integer.parseInt(argstr[argstr.length-1] + "");
         int sum = a+b;
         String ans = String.valueOf(sum);
 
