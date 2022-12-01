@@ -13,7 +13,7 @@ public class SearchStepdefs extends AbstractStepDefs{
 
     @When("user Search title is {string}")
     public void userSearchTitleIs(String arg0) {
-        //定位搜索框并搜索对应值
+        //get search field
         driver.findElement(By.xpath("//*[@id=\"post-217173\"]" +
                 "/div/div[1]/div/div[1]/div/div/div[2]/form/div/input[1]")).sendKeys(arg0);
 
@@ -21,7 +21,6 @@ public class SearchStepdefs extends AbstractStepDefs{
 
     @Then("Search should be successful")
     public void searchShouldBeSuccessful() throws InterruptedException {
-        //通过搜索的id定位点击
         driver.findElement(By.xpath("//*[@id=\"post-217173\"]" +
                 "/div/div[1]/div/div[1]/div/div/div[2]/form/div/input[5]")).click();
         Thread.sleep(2000);

@@ -23,8 +23,10 @@ public class MessageStepdefs extends  AbstractStepDefs{
                 (By.xpath("//*[@id=\"et_pb_contact_form_0\"]/div[2]/form/div/div/p/span"))
                 .getText();
 
+        //split the string to 2 part by "+"
         String[] xarr = arg.split(" \\+ ");
 
+        //put elements to int array to operate
         int[] values = Arrays.stream(xarr)
                 .mapToInt(Integer::parseInt)
                 .toArray();

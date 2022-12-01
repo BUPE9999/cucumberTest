@@ -10,9 +10,6 @@ import org.openqa.selenium.edge.EdgeOptions;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * 初始化，包括启动驱动和使用implicitlyWait的Selenium隐式等待
- */
 public abstract class AbstractStepDefs {
 
     private static final int WAIT_TIME = 10;

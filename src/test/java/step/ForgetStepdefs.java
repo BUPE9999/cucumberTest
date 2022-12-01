@@ -24,9 +24,8 @@ public class ForgetStepdefs extends AbstractStepDefs{
 
     @Then("login should be successful")
     public void loginShouldBeSuccessful() {
-        //点击跳转
         driver.findElement(By.xpath(LoginPage.getLOGIN())).click();
-        //由于账号密码错误，所以判断是一定出错的
+        //there should be error due to wrong password
         if(driver.getCurrentUrl().equalsIgnoreCase("https://phptravels.net/api/admin")){
             System.out.println("Test Pass");
         }
@@ -37,19 +36,18 @@ public class ForgetStepdefs extends AbstractStepDefs{
 
     @Given("user forget password when login")
     public void userForgetPasswordWhenLogin() {
-        //跳转浏览器到登录页面
         driver.get("https://phptravels.net/api/admin");
     }
 
     @When("user click Forget Password and Email Address is {string}")
     public void userClickForgetPasswordAndEmailAddressIs(String arg0) {
-        //点击Forget Password
+        //click Forget Password
         driver.findElement(By.id("link-forgot")).click();
 
-        //输入email
+        //input email
         driver.findElement(By.id("resetemail")).sendKeys(arg0);
 
-        // 点击提交
+        // submit
         driver.findElement(By.xpath("//*[@id=\"btn-forgot\"]/span[1]")).click();
 
     }
