@@ -20,4 +20,4 @@ Feature: user Forget Password
       | email                   |
       | 123                     |
       | 111111                  |
-      |admin@phptravels.com     |
+      | admin@phptravels.com     |

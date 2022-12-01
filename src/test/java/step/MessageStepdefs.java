@@ -40,7 +40,7 @@ public class MessageStepdefs extends  AbstractStepDefs{
         driver.findElement(By.xpath("//*[@id=\"et_pb_contact_form_0\"]/div[2]/form/div/div/p/input"))
                 .sendKeys(ans);
         Thread.sleep(1000);
-            }
+    }
 
     @Then("submit button clicked")
     public void submitButtonClicked() {

@@ -7,4 +7,4 @@ Feature: Search
     Examples:
       | title |
       | java  |
-      | Test   |
+      | Test  |

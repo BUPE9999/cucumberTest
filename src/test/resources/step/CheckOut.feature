@@ -20,4 +20,4 @@ Feature: AddCart test
     Examples:
       | FirstName | LastName | Zip/PostalCode |
       | Sen       | Kou      | 100         |
-      | Wen        | Ying      | 200         |
+      | Wen       | Ying     | 200         |
